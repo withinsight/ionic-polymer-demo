@@ -23,28 +23,45 @@
 
     <link rel="import" href="elements/elements.html">
   </head>
-  <body ng-app="starter">
-
-    <ion-pane>
+  <body ng-app="starter" class="fullbleed layout vertical">
+    <paper-scroll-header-panel class="flex">
 
       <paper-toolbar>
         <span class="paper-font-title">Ionic Blank Starter</h1>
       </paper-toolbar>
 
       <template is="dom-bind">
-        <iron-pages selected="{{selected}}">
-          <section>Feed</section>
-          <section>Friends</section>
-          <section>Profile</section>
-        </iron-pages>
+        <div class="content">
+          <iron-pages selected="{{selected}}">
+            <section>
+              <paper-material elevation="1">
+                I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper.
+              </paper-material>
+              <paper-material elevation="1">
+                I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper.
+              </paper-material>
+              <paper-material elevation="1">
+                I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper.
+              </paper-material>
+              <paper-material elevation="1">
+                I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper.
+              </paper-material>
+              <paper-material elevation="1">
+                I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper. I'm a piece of paper.
+              </paper-material>
+            </section>
+            <section>Friends</section>
+            <section>Profile</section>
+          </iron-pages>
 
-        <paper-tabs selected="{{selected}}" align-bottom class="fixed-bottom tabs-positive">
-          <paper-tab>Feed</paper-tab>
-          <paper-tab>Friends</paper-tab>
-          <paper-tab>Profile</paper-tab>
-        </paper-tabs>
+          <paper-tabs selected="{{selected}}" align-bottom class="fixed-bottom tabs-positive">
+            <paper-tab>Feed</paper-tab>
+            <paper-tab>Friends</paper-tab>
+            <paper-tab>Profile</paper-tab>
+          </paper-tabs>
+        </div>
       </template>
 
-    </ion-pane>
+    </paper-scroll-header-panel>
   </body>
 </html>

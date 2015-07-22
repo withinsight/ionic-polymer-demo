@@ -9,6 +9,9 @@
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
 
+    <!-- webcomponent polyfills should be included first -->
+    <script src="lib/webcomponentsjs/webcomponents-lite.js"></script>
+
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -17,6 +20,8 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+
+    <link rel="import" href="elements/elements.html">
   </head>
   <body ng-app="starter">
 

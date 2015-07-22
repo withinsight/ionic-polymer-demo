@@ -3,6 +3,9 @@
   "private": "true",
   "devDependencies": {
     "ionic": "driftyco/ionic-bower#1.0.1",
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3",
+    "paper-elements": "PolymerElements/paper-elements#~1.0.2",
+    "neon-elements": "PolymerElements/neon-elements#~1.0.0"
   }
 }

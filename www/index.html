@@ -26,11 +26,25 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <paper-toolbar class="bar-stable">
+
+      <paper-toolbar>
         <span class="paper-font-title">Ionic Blank Starter</h1>
       </paper-toolbar>
-      <ion-content>
-      </ion-content>
+
+      <template is="dom-bind">
+        <iron-pages selected="{{selected}}">
+          <section>Feed</section>
+          <section>Friends</section>
+          <section>Profile</section>
+        </iron-pages>
+
+        <paper-tabs selected="{{selected}}" align-bottom class="fixed-bottom tabs-positive">
+          <paper-tab>Feed</paper-tab>
+          <paper-tab>Friends</paper-tab>
+          <paper-tab>Profile</paper-tab>
+        </paper-tabs>
+      </template>
+
     </ion-pane>
   </body>
 </html>

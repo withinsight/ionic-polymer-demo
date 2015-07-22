@@ -15,5 +15,8 @@ angular.module('starter', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
+
+    var template = document.querySelector('template[is="dom-bind"]');
+    template.selected = 0;
   });
 })
